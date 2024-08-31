@@ -22,8 +22,8 @@ title: Semillero Internacional de Talentos
 email: sitalentos2022@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Semillero Internacional de Talentos en Colombia: Empoderamos a niños vulnerables con programas educativos y artísticos. Asociaciones estratégicas con empresas para transformar vidas y fortalecer comunidades.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/sitalentos" # the subpath of your site, e.g. /blog
+url: "https://ethx42.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 whatsapp_number: https://wa.me/573143731720?text=%C2%A1Hola%20%21+Quiero+saber+más+sobre+Semillero+Internacional+de+Talentos+y+cómo+puedo+ayudar+a+los+niños.%20%C2%BFMe+cuentan+más%3F
 instagram_username:  sitalentos14
 facebook_username:  100090322849458&mibextid=LQQJ4d
