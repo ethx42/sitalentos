@@ -20,13 +20,42 @@ $heading-half-bold: 600 !default;
 $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 $spacing-unit: 30px !default;
-$text-color: #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color: #5844FF !default;
-$grey-color: #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark: darken($grey-color, 25%) !default;
-$hero-color: #e9c85d;
+// $text-color: #191919 !default; 
+// $background-color: #EFE9FC !default; 
+// $brand-color: #5F24DF !default; 
+$grey-color: #828282 !default; 
+$grey-color-light: lighten(#828282, 40%) !default; 
+$grey-color-dark: darken(#828282, 25%) !default; 
+$hero-color: radial-gradient(circle closest-corner at 100% 50%, #FF6700 9%, #5F24DF 94%) !default;
+
+$primary-text-color: #191919 !default;       // Main text color, used for general content and inactive links
+$primary-background-color: #EFE9FC !default; // Main background color for the site, a soft light purple
+$primary-brand-color: #5F24DF !default;      // Main brand color used for logos, primary buttons, and active links
+$primary-link-hover-color: #5F24DF !default; // Hover color for links, matching the brand color
+
+$header-background-color: #FFFFFF !default;  // Background color for the header section
+$header-logo-color: #5F24DF !default;        // Color of the logo in the header
+$header-text-color: #191919 !default;        // Text color in the header
+
+$button-background-color: #5F24DF !default;  // Default button background color, aligned with the brand color
+$button-border-color: #5F24DF !default;      // Border color for buttons, same as the background for consistency
+$button-hover-background-color: #4C1DB2 !default; // Background color for buttons on hover, a darker shade of the brand color
+
+$section1-background: radial-gradient(circle closest-corner at 100% 50%, #FF6700 9%, #5F24DF 94%) !default; // Gradient background for the first section
+$section1-text-color: #EFE9FC !default;      // Text color for Section 1, light for contrast against the gradient background
+
+$section2-background-color: #252525 !default; // Dark background color for the second section
+$section2-text-color: #EFE9FC !default;       // Light text color for Section 2, ensuring readability against the dark background
+$section2-button-background-color: #252525 !default; // Button background color in Section 2, matching the section background
+$section2-button-border-color: #EFE9FC !default;     // Button border color in Section 2, using the light text color for contrast
+
+$footer-background-color: #EFE9FC !default;  // Background color for the footer, a light purple for consistency
+$footer-text-color: #191919 !default;        // Footer text color, matching the primary text color
+$footer-link-color: #191919 !default;        // Footer link color, same as text for a cohesive look
+$footer-link-hover-color: #5F24DF !default;  // Footer link hover color, matching the brand color for consistency
+$footer-link-underline-color: #FF6700 !default; // Underline color for some footer links, a bright orange for emphasis
+
+
 $table-text-align: left !default;
 // Width of the content area
 $content-width: 1200px !default;
@@ -45,6 +74,10 @@ $mobile: 400px !default;
     @media screen and (max-width: $device) {
         @content;
     }
+    .page-heading {
+        @include relative-font-size(1.8);
+    }
+    
 }
 
 @mixin relative-font-size($ratio) {

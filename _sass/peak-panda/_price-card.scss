@@ -1,5 +1,7 @@
 .price {
     margin-top: 40px;
+    background-color: $primary-background-color;
+    color: $section2-text-color;
     @include media-query($tablet) {
         .wrapper-flex {
             flex-direction: column;
@@ -19,13 +21,13 @@
 }
 
 .price-title {
-    background-color: $grey-color-light;
+    background-color: $section2-background-color;
     margin-bottom: -180px;
     padding: 60px 60px 160px 60px;
 }
 
 .price-card {
-    background-color: $hero-color;
+    background-color: $section1-background;
     color: white;
     padding: 20px;
     width: calc(33.3% - 10px) !important;

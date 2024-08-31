@@ -7,9 +7,14 @@ section.people {
     .people-lists {
         align-items: flex-start;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+        
     }
     .people-list {
-        width: 23%;
+        width: 33%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
         &--img {
             border-radius: 50%;
             width: 150px;
@@ -22,6 +27,9 @@ section.people {
         }
         &--title {
             font-size: $small-font-size;
+        }
+        &--description {
+            text-align: center;
         }
     }
     @include media-query($tablet) {

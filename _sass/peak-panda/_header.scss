@@ -2,14 +2,24 @@ header {
     .wrapper {
         padding-top: 20px;
         padding-bottom: 20px;
+   
     }
     .site-title {
-        display: block;
+        display: flex;
+        align-items: center; // Centra verticalmente el logo y el texto
         img {
             width: 60px;
             display: inline;
         }
+          
+        .site-logo-text {
+            margin-left: 1rem;
+            width: 15rem;
+            line-height: 2rem;
+        }
     }
+
+
     nav.site-nav {
         display: flex;
         width: 50%;

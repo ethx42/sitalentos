@@ -2,51 +2,45 @@
 layout: default
 ---
 
-<main class="page-content" aria-label="Content">
-    <div class="wrapper wrapper-flex">
-        <div class="flex-half home">
-          {%- if page.title -%}
-            <h1 class="page-heading">{{ page.title }}</h1>
-          {%- endif -%}
+{%- include home-hero.html -%}
+{%- include home-mission.html -%}
+{%- include home-impact.html -%}
+{%- include home-history.html -%}
+{%- include home-founders.html -%}
 
-            <h1>Peak Panda</h1>
-            <h3>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-            </h3>
-            <button class="button secondary short full-on-mobile">Sign up now</button>
 
-        </div>
-
-        <div class="flex-half home-image image-shadow">
-          <img src="./assets/undraw_Campfire_re_9chj.png" alt="">
-        </div>
-    </div>
-</main>
-
-<section class="wrapper wrapper-flex">
-  <div class="flex-half image-shadow">
-    <img src="./assets/undraw_Fans_re_cri3.png" alt="">
-    </div>
-    <div class="flex-half home">
-      <h2>Adopt a panda, right now</h2>
-      <h3>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      </h3>
-    </div>
+<!-- <section class="wrapper text-center-align">
+    <h2>Talentos</h2>
+    <p>
+      Creemos que cada niño tiene un don único. Nuestras áreas de talento incluyen deportes, gastronomía, música, teatro, robótica, y más. Cada programa está diseñado para descubrir y potenciar las habilidades de los niños, preparándolos para un futuro prometedor.
+    </p>
 </section>
 
 <section class="wrapper wrapper-flex">
-  <div class="flex-half home">
-    <h2>All you have to do is fill a form</h2>
-    <h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-    </h3>
+  <div class="flex-3-col image-shadow">
+    <img src="./assets/undraw_In_the_office_re_jtgc.png" alt="">
   </div>
-
-    <div class="flex-half image-shadow">
-      <img src="./assets/undraw_Designer_life_re_6ywf.png" alt="">
-    </div>
+  <div class="flex-3-col image-shadow">
+    <img src="./assets/undraw_Prototyping_process_re_7a6p.png" alt="">
+  </div>
+  <div class="flex-3-col image-shadow">
+    <img src="./assets/undraw_Interview_re_e5jn.png" alt="">
+  </div>
+  <div class="flex-3-col image-shadow">
+    <img src="./assets/undraw_In_the_office_re_jtgc.png" alt="">
+  </div>
 </section>
+<section class="wrapper wrapper-flex">
+  <div class="flex-3-col image-shadow">
+    <img src="./assets/undraw_Prototyping_process_re_7a6p.png" alt="">
+  </div>
+  <div class="flex-3-col image-shadow">
+    <img src="./assets/undraw_Interview_re_e5jn.png" alt="">
+  </div>
+  <div class="flex-3-col image-shadow">
+    <img src="./assets/undraw_Interview_re_e5jn.png" alt="">
+  </div>
+</section> -->
 
 <section class="wrapper text-center-align">
     <h2>Panda is your best companion</h2>
@@ -67,11 +61,8 @@ layout: default
     </div>
 </section>
 
-<section class="wrapper text-center-align">
-  <h2>Bring your own panda home in minutes.</h2>
-  <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-  <button class="button secondary short position-centern-align full-on-mobile">Try it free now</button>
-</section>
+{%- include home-contactanos.html -%}
+
 
 <section class="wrapper why-choose-us">
   <h2 class="text-center-align">Play with a panda, every day.</h2>
@@ -99,5 +90,3 @@ layout: default
 {%- include price.html -%}
 
 {%- include steps.html -%}
-
-{%- include people.html -%}
