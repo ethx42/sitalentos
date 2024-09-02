@@ -26,7 +26,7 @@ $spacing-unit: 30px !default;
 $grey-color: #828282 !default; 
 $grey-color-light: lighten(#828282, 40%) !default; 
 $grey-color-dark: darken(#828282, 25%) !default; 
-$hero-color: radial-gradient(circle closest-corner at 100% 50%, #FF6700 9%, #5F24DF 94%) !default;
+$hero-color: #EFE9FC;
 
 $primary-text-color: #191919 !default;       // Main text color, used for general content and inactive links
 $primary-background-color: #EFE9FC !default; // Main background color for the site, a soft light purple
@@ -41,7 +41,7 @@ $button-background-color: #5F24DF !default;  // Default button background color,
 $button-border-color: #5F24DF !default;      // Border color for buttons, same as the background for consistency
 $button-hover-background-color: #4C1DB2 !default; // Background color for buttons on hover, a darker shade of the brand color
 
-$section1-background: radial-gradient(circle closest-corner at 100% 50%, #FF6700 9%, #5F24DF 94%) !default; // Gradient background for the first section
+$section1-background: radial-gradient(circle closest-corner at 100% 80%, #FF6700 9%, #5F24DF 94%) !default; // Gradient background for the first section
 $section1-text-color: #EFE9FC !default;      // Text color for Section 1, light for contrast against the gradient background
 
 $section2-background-color: #252525 !default; // Dark background color for the second section
@@ -62,7 +62,7 @@ $content-width: 1200px !default;
 $tablet: 960px !default;
 $on-palm: 600px !default;
 $on-laptop: 800px !default;
-$mobile: 400px !default;
+$mobile: 430px !default;
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {

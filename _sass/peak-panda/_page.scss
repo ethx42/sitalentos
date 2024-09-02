@@ -67,3 +67,18 @@ section.contact {
         }
     }
 }
+.mission, .impact {
+    color: $section1-text-color;
+    .image-shadow img {
+        box-shadow: 1px 1px 15px 0px #EFE9FC;
+    }
+}
+
+.history, .people {
+   background-color: $primary-background-color;
+   width: 100%;
+}
+
+section.people .people-lists {
+    align-items: center !important;
+}
