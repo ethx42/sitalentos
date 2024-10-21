@@ -77,11 +77,26 @@ section.contact {
     .image-shadow img {
         box-shadow: 1px 1px 15px 0px $primary-background-color;
     }
+
 }
 
 .history, .people {
    background-color: $primary-background-color;
    width: 100%;
+
+   .mobile {
+    display: none;
+}
+
+@include media-query($mobile) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
 }
 
 section.people .people-lists {
@@ -93,8 +108,21 @@ section.people .people-lists {
         margin-top: 2rem;
     }
 
+    .centered-button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .mobile {
+        display: none;
+    }
+
     @include media-query($mobile) {
         padding-top: 0;
+        padding-bottom: 0;
+
 
         h3 {
             text-align: center;
@@ -103,6 +131,23 @@ section.people .people-lists {
         .cta-button {
             margin-top: 1.5rem;
             margin-bottom: 1rem;
+        }
+
+        .mobile {
+            display: block;
+            padding-top: 2rem;
+        }
+    
+        .desktop {
+            display: none;
+        }
+
+        .centered-button {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-top: 1.5rem;
+            padding-bottom: 0;
         }
     }
 }
