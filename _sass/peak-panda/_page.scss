@@ -78,6 +78,20 @@ section.contact {
         box-shadow: 1px 1px 15px 0px $primary-background-color;
     }
 
+    .mobile {
+        display: none;
+    }
+
+    @include media-query($mobile) {
+        .mobile {
+            display: block;
+        }
+
+        .desktop {
+            display: none;
+        }
+    }
+
 }
 
 .history, .people {
