@@ -17,19 +17,23 @@ section.people {
         align-items: center;
         &--img {
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 250px;
+            height: 250px;
             object-fit: cover;
+            border: 1rem solid white;
         }
+
         h4 {
             margin-top: 15px;
             margin-bottom: 0;
         }
         &--title {
-            font-size: $small-font-size;
+            font-size: $medium-font-size;
+            text-align: left;
+            margin-top: -13px;
         }
         &--description {
-            text-align: center;
+            text-align: left;
         }
     }
     @include media-query($tablet) {

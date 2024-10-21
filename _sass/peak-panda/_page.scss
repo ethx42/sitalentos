@@ -35,7 +35,12 @@ section.why-choose-us {
     }
 }
 
+.contact-background {
+    background-color: $primary-background-color;
+    padding-bottom: 3rem;
+}
 section.contact {
+
     .contact__content {
         display: flex;
         margin-top: 40px;
@@ -70,7 +75,7 @@ section.contact {
 .mission, .impact {
     color: $section1-text-color;
     .image-shadow img {
-        box-shadow: 1px 1px 15px 0px #EFE9FC;
+        box-shadow: 1px 1px 15px 0px $primary-background-color;
     }
 }
 
@@ -82,3 +87,23 @@ section.contact {
 section.people .people-lists {
     align-items: center !important;
 }
+
+.hero-section {
+    .cta-button {
+        margin-top: 2rem;
+    }
+
+    @include media-query($mobile) {
+        padding-top: 0;
+
+        h3 {
+            text-align: center;
+        }
+
+        .cta-button {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
