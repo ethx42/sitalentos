@@ -88,15 +88,20 @@ section.contact {
     display: none;
 }
 
-@include media-query($mobile) {
-    .mobile {
-        display: block;
+    @include media-query($mobile) {
+        .mobile {
+            display: block;
+        }
+
+        .desktop {
+            display: none;
+        }
+    
+        &-list--title {
+            text-align: center !important;
+        }
     }
 
-    .desktop {
-        display: none;
-    }
-}
 }
 
 section.people .people-lists {
